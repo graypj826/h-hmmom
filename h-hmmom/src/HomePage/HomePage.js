@@ -5,9 +5,31 @@ class HomePage extends Component {
     constructor(){
         super(),
         this.state = {
-            movies: {
-                [1,2,3,4,5,6]
-            }
+            movies: 
+                [{title: "Haunter: the Art of the Haunt", 
+                description: "test test test", 
+                streaming:"Netflix", 
+                poster:"hyperlink",
+                year: 2018,
+                hhmmomYear: 2018,
+                number: 4     
+                },
+                {title: "the fly", 
+                description: "fly fly fly", 
+                streaming:"Hulu", 
+                poster:"hyperlink",
+                year: 2018,
+                hhmmomYear: 2018,
+                number: 5 },
+                {title: "Candyman 2", 
+                description: "candyman candyman candy...was it four or five?", 
+                streaming:"Hulu", 
+                poster:"hyperlink",
+                year: 2018,
+                hhmmomYear: 2018,
+                number: 6 }
+            ]
+            
         }
     }
     render(){
