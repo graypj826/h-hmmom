@@ -1,9 +1,15 @@
-import React, { Component } from "react";
-import Nav from "../Nav/Nav.js";
+import React, { Component } from "react"
+import { Route, Switch, Link } from "react-router-dom"
+import Navigation from "../Navigation/Navigation.jsx";
+import TodayFeature from "../TodayFeature/TodayFeature.jsx";
+import Calendar from "../Calendar/Calendar.jsx";
+import About from "../About/About.jsx";
+import AllFeatures from "../AllFeatures/AllFeatures.jsx";
+
 
 class HomePage extends Component {
-    constructor(){
-        super(),
+    constructor () {
+        super();
         this.state = {
             movies: 
                 [{title: "Haunter: the Art of the Haunt", 
@@ -28,30 +34,32 @@ class HomePage extends Component {
                 year: 2018,
                 hhmmomYear: 2018,
                 number: 6 }
-            ]
+                ]
             
         }
     }
     render(){
         return(
+            
             <div> 
                 <h1> H-hmmom </h1>
-                <Nav/>
+                <Navigation/>
                 <div>
                     <Route exact path="/home/" render ={(props) => {
                         return(
                             <TodayFeature
-                            {...props}
                             />
                         )
                     }}
                     />
                 </div>
+                <TodayFeature movie={this.state.movies[1]}/>
+                {/* </div>
                 <div>
                     <Route exact path="/calendar/" render ={(props) => {
                         return(
                             <Calendar
-                            {...props}
+                            
                             />
                         )
                     }}
@@ -61,7 +69,7 @@ class HomePage extends Component {
                     <Route exact path="/about/" render ={(props) => {
                         return(
                             <About
-                            {...props}
+                            
                             />
                         )
                     }}
@@ -71,15 +79,17 @@ class HomePage extends Component {
                     <Route exact path="/allFeatures/" render ={(props) => {
                         return(
                             <AllFeatures
-                            {...props}
                             />
                         )
                     }}
                     />
                 </div>
+                 */}
+                <h1> wtf </h1>
             </div>
+
         )
     }
-}
+};
 
 export default HomePage;

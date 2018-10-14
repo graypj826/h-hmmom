@@ -7,11 +7,12 @@ import{
   Nav,
   NavItem,
   NavLink,
+  Collapse
 } from "reactstrap";
 
-export default class Nav extends Component{
-    constructor(props){
-        super(props);
+export default class Navigation extends Component{
+    constructor(){
+        super();
         this.state = {
             isOpen: false
         }
@@ -26,7 +27,7 @@ export default class Nav extends Component{
             <div>
                 <Navbar color="light" ligth expand="md">
                     <NavbarBrand href="/home/">H-Hmmom</NavbarBrand>
-                    <NavBarToggler onClick={this.toggle} />
+                    <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <NavItem>
                                 <Link to="/home/"> Home </Link>

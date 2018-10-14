@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import HomePage from "./HomePage/HomePage.js"
-import {Route, Switch, Link} from "react-router-dom"
+import HomePage from "./HomePage/HomePage.jsx"
+
 
 class App extends Component {
   render() {
