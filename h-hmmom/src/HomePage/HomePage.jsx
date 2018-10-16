@@ -53,7 +53,12 @@ class HomePage extends Component {
                     }}
                     />
                 </div>
+                <h1> Today Feature </h1>
                 <TodayFeature movie={this.state.movies[1]}/>
+                <h1> Calendar </h1>
+                <Calendar movies={this.state.movies}/>
+                <h1> All Features </h1>
+                <AllFeatures movies={this.state.movies}/>
                 {/* </div>
                 <div>
                     <Route exact path="/calendar/" render ={(props) => {

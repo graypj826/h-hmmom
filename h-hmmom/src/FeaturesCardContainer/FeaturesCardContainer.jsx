@@ -1,7 +1,8 @@
-import react, {Component} from "../../../../../Library/Caches/typescript/2.9/node_modules/@types/react"
+import react, {Component} from "react"
 import FeatureCard from "./FeatureCard/FeatureCard.js"
 
 class FeatureCardsContainer extends Component{
+
     render(){
         return(
             <div> 
