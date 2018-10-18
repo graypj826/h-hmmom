@@ -59,6 +59,8 @@ class HomePage extends Component {
                 <Calendar movies={this.state.movies}/>
                 <h1> All Features </h1>
                 <AllFeatures movies={this.state.movies}/>
+                <h1> About </h1>
+                <About/>
                 {/* </div>
                 <div>
                     <Route exact path="/calendar/" render ={(props) => {
@@ -90,7 +92,6 @@ class HomePage extends Component {
                     />
                 </div>
                  */}
-                <h1> wtf </h1>
             </div>
 
         )
